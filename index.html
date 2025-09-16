@@ -3,38 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elderly Smiles</title>
+  <title>Elderly Smiles - Pink Theme</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="programs.html">Our Work</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
+  <!-- Top Navigation + Logo -->
   <header>
-    <h1>Welcome to Elderly Smiles</h1>
-    <p>Bringing joy, connection, and care to older adults in our community.</p>
+    <div class="top-bar">
+      <nav class="nav-left">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Get Involved</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo-right">
+        <img src="placeholder-logo.png" alt="Logo" />
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>Our Mission</h2>
-    <p>We reduce isolation and promote happiness for elderly Hispanic adults in Little Havana through conversation, art, and activities.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="placeholder-hero.jpg" alt="Hero Image">
+      <button class="cta-button">Join Us</button>
+    </div>
   </section>
 
-  <section>
-    <h2>Get Involved</h2>
-    <p>Join us in spreading smiles! Volunteer, share your time, or partner with us.</p>
-    <a href="get-involved.html">Learn More</a>
+  <!-- Text Section -->
+  <section class="text-section">
+    <h6 class="headline">Making Every Smile Count</h6>
+    <h3 class="subheadline"><em>Connecting Generations, One Visit at a Time</em></h3>
+    <p class="body-text">Elderly Smiles brings joy and companionship to seniors in our community through weekly activities, art, and conversation. Join us in making a difference!</p>
   </section>
 
+  <!-- Parallax Section -->
+  <section class="parallax">
+    <div class="parallax-text">Experience the joy of giving back</div>
+  </section>
+
+  <!-- Thumbnails Hover Section -->
+  <section class="thumbnails">
+    <div class="thumb-container">
+      <div class="thumb"><img src="thumb1.jpg" alt="Activity 1"></div>
+      <div class="thumb"><img src="thumb2.jpg" alt="Activity 2"></div>
+      <div class="thumb"><img src="thumb3.jpg" alt="Activity 3"></div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel">
+    <div class="carousel-slide">
+      <img src="carousel1.jpg" alt="Slide 1">
+      <img src="carousel2.jpg" alt="Slide 2">
+      <img src="carousel3.jpg" alt="Slide 3">
+    </div>
+  </section>
+
+  <!-- Lead Magnet / Email Subscribe -->
+  <section class="lead-magnet">
+    <h3>Join the Mission</h3>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
+    <nav class="footer-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Get Involved</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <p>&copy; 2025 Elderly Smiles | Miami, FL</p>
   </footer>
+
+  <!-- Optional JS for Carousel -->
+  <script>
+    const slides = document.querySelectorAll('.carousel-slide img');
+    let currentIndex = 0;
+    setInterval(() => {
+      slides.forEach((img, i) => img.style.display = i === currentIndex ? 'block' : 'none');
+      currentIndex = (currentIndex + 1) % slides.length;
+    }, 3000);
+  </script>
+
 </body>
 </html>
