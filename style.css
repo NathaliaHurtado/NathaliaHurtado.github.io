@@ -61,3 +61,39 @@ body {
 .carousel { position: relative; max-width: 800px; margin: 20px auto; overflow: hidden; border-radius: 10px; }
 .carousel img { width: 100%; display: none; }
 .carousel img.active { display: block; }
+
+/* Fonts */
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+}
+p, a, li {
+  font-family: 'Source Serif Pro', serif;
+}
+
+/* Logo */
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Section colors */
+.light-pink {
+  background-color: #fce4ec; /* soft pink */
+  padding: 40px;
+  text-align: center;
+}
+.lighter-pink {
+  background-color: #f8bbd0; /* lighter pink */
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.stat-box {
+  text-align: center;
+}
+.stat-box h2 {
+  font-size: 3em;
+  margin: 0;
+  color: #ad1457;
+}
+
