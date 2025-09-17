@@ -6,15 +6,27 @@
   <title>Elderly Smiles - Home</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    /* Fonts */
+    h1, h2 {
+      font-family: 'Raleway', sans-serif;
+    }
+    body, p, h3, h4, h5, h6 {
+      font-family: 'Source Serif Pro', serif;
+    }
+
     /* Section backgrounds */
     .light-pink { background: #ffe4ec; }
     .lighter-pink { background: #fff0f5; }
 
     /* Overview section */
     .overview { padding: 60px 20px; text-align: center; }
-    .overview h1 { color: #ff69b4; margin-bottom: 20px; }
-    .overview p { max-width: 600px; margin: 0 auto; font-size: 18px; }
+    .overview h1 { color: #ff69b4; margin-bottom: 20px; font-size: 36px; }
+    .overview p { max-width: 700px; margin: 0 auto; font-size: 18px; }
 
     /* Stats boxes */
     .stats { display: flex; justify-content: center; gap: 30px; margin: 40px 0; flex-wrap: wrap; }
@@ -22,12 +34,47 @@
     .stat-box h2 { font-size: 36px; margin-bottom: 10px; }
     .stat-box p { font-size: 18px; margin: 0; }
 
-    /* Hero section adjustment */
-    .hero { height: 300px; }
-    .cta-button { position: relative; top: auto; left: auto; margin-top: 20px; }
+    /* Hero section */
+    .hero {
+      position: relative;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .cta-button {
+      background: #ff69b4;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+      z-index: 1;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      background: #ff1493;
+    }
 
     /* Centered text sections */
-    .section h2, .section p { text-align: center; max-width: 700px; margin: 0 auto 20px auto; }
+    .section h2, .section p {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+    }
   </style>
 </head>
 <body>
@@ -52,9 +99,16 @@
   </nav>
 </header>
 
+<!-- Hero Section -->
+<section class="hero">
+  <img src="placeholder-hero.jpg" alt="Hero Image" class="hero-bg">
+  <h1>Welcome to Elderly Smiles Inc</h1>
+  <p>An official Florida Non-Profit bringing joy and companionship to elderly residents.</p>
+  <a href="get-involved.html" class="cta-button">Join Us</a>
+</section>
+
 <!-- Overview Section -->
 <section class="overview light-pink">
-  <h1>Welcome to Elderly Smiles Inc</h1>
   <p>Elderly Smiles Inc is an official Florida Non-Profit dedicated to enriching the lives of elderly individuals. Through volunteering, community engagement, and creative activities, we bring joy, companionship, and meaningful connections to residents in nursing homes and assisted living facilities.</p>
 </section>
 
