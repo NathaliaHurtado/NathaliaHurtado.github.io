@@ -3,32 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Elderly Smiles</title>
+  <title>About - Elderly Smiles</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="programs.html">Our Work</a></li>
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#why">Why I Started</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+        </ul>
+      </li>
+      <li><a href="events.html">Events</a></li>
       <li><a href="get-involved.html">Get Involved</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+</header>
 
-  <header>
-    <h1>About Elderly Smiles</h1>
-  </header>
+<section id="mission" class="section">
+  <h2>Our Mission</h2>
+  <p>We aim to bring joy, companionship, and smiles to elderly individuals through connection and community.</p>
+</section>
 
-  <section>
-    <p>Elderly Smiles was founded to bring joy and companionship to older adults in our community. Through art, conversation, and weekly visits, we aim to reduce isolation and create meaningful connections.</p>
-    <h2>Founder</h2>
-    <p>Nathalia Hurtado — student, volunteer, and founder of Elderly Smiles. Passionate about connecting generations and supporting Hispanic elders in Little Havana.</p>
-  </section>
+<section id="why" class="section">
+  <h2>Why I Started</h2>
+  <p>A personal story about why Elderly Smiles began.</p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Elderly Smiles | Miami, FL</p>
-  </footer>
+<section id="aboutme" class="section">
+  <h2>About Me</h2>
+  <p>Details about the founder.</p>
+</section>
+
+<footer class="footer">
+  <ul class="footer-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="get-involved.html">Get Involved</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>&copy; 2025 Elderly Smiles</p>
+</footer>
+
 </body>
 </html>
