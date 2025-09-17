@@ -3,99 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elderly Smiles Inc</title>
+  <title>Elderly Smiles - Home</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Top Navigation + Logo -->
-  <header>
-    <div class="top-bar">
-      <nav class="nav-left">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Get Involved</a></li>
-          <li><a href="#">Contact</a></li>
+<header>
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html#mission">Mission</a></li>
+          <li><a href="about.html#why">Why I Started</a></li>
+          <li><a href="about.html#aboutme">About Me</a></li>
         </ul>
-      </nav>
-      <div class="logo-right">
-        <img src="elderly.PNG" alt="Logo" />
-      </div>
-    </div>
-  </header>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="Resized_20250209_104518_1739144468242 (1).JPEG" alt="Hero Image">
-      <button class="cta-button">Join Us</button>
-    </div>
-  </section>
+<section class="hero">
+  <img src="placeholder-hero.jpg" alt="Hero Image" class="hero-bg">
+  <button class="cta-button">Join Us</button>
+</section>
 
-  <!-- Text Section -->
-  <section class="text-section">
-    <h6 class="headline">Making Every Smile Count</h6>
-    <h3 class="subheadline"><em>Connecting Generations, One Visit at a Time</em></h3>
-    <p class="body-text">Elderly Smiles brings joy and companionship to seniors in our community through weekly activities, art, and conversation. Join us in making a difference!</p>
-  </section>
+<section class="section">
+  <h2>Experience the joy of giving back</h2>
+  <p>Connecting with elderly individuals brings smiles and companionship.</p>
+</section>
 
-  <!-- Parallax Section -->
-  <section class="parallax">
-    <div class="parallax-text">Experience the joy of giving back</div>
-  </section>
+<section class="carousel">
+  <img src="placeholder1.jpg" class="active" alt="Slide 1">
+  <img src="placeholder2.jpg" alt="Slide 2">
+  <img src="placeholder3.jpg" alt="Slide 3">
+</section>
 
-  <!-- Thumbnails Hover Section -->
-  <section class="thumbnails">
-    <div class="thumb-container">
-      <div class="thumb"><img src="thumb1.jpg" alt="Activity 1"></div>
-      <div class="thumb"><img src="thumb2.jpg" alt="Activity 2"></div>
-      <div class="thumb"><img src="thumb3.jpg" alt="Activity 3"></div>
-    </div>
-  </section>
-
-  <!-- Carousel Section -->
-  <section class="carousel">
-    <div class="carousel-slide">
-      <img src="carousel1.jpg" alt="Slide 1">
-      <img src="carousel2.jpg" alt="Slide 2">
-      <img src="carousel3.jpg" alt="Slide 3">
-    </div>
-  </section>
-
-  <!-- Lead Magnet / Email Subscribe -->
-  <section class="lead-magnet">
-    <h3>Join the Mission</h3>
-    <form>
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <nav class="footer-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Get Involved</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <p>&copy; 2025 Elderly Smiles | Miami, FL</p>
-  </footer>
-
-  <!-- Optional JS for Carousel -->
-  <script>
-    const slides = document.querySelectorAll('.carousel-slide img');
-    let currentIndex = 0;
-    setInterval(() => {
-      slides.forEach((img, i) => img.style.display = i === currentIndex ? 'block' : 'none');
-      currentIndex = (currentIndex + 1) % slides.length;
-    }, 3000);
-  </script>
+<footer class="footer">
+  <ul class="footer-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html#mission">Mission</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="get-involved.html">Get Involved</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>&copy; 2025 Elderly Smiles</p>
+</footer>
 
 </body>
 </html>
