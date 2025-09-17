@@ -1,224 +1,63 @@
-/* General Styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #ffe6f0; /* Soft pink background */
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
   color: #333;
 }
 
-/* Top Bar */
-.top-bar {
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ffb6c1;
   padding: 15px 30px;
-  background: #ffb6c1; /* medium pink */
-}
-
-.nav-left ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-left ul li {
-  margin-right: 20px;
-}
-
-.nav-left ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.logo-right img {
-  height: 50px;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  height: 400px;
-  background: #ffccd5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero img {
-  position: absolute;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* behind the button */
+  z-index: 1000;
 }
+.logo { font-size: 24px; font-weight: bold; color: #fff; }
+.nav-links { list-style: none; display: flex; margin: 0; padding: 0; }
+.nav-links li { margin-left: 20px; position: relative; }
+.nav-links a { text-decoration: none; color: white; font-weight: bold; padding: 8px 12px; transition: 0.3s; }
+.nav-links a:hover { background: #ff69b4; border-radius: 5px; }
 
-.cta-button {
-  position: absolute;
-  bottom: 20px;
-  background: #ff69b4; /* hot pink */
-  border: none;
-  color: white;
-  padding: 15px 30px;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-  z-index: 1; /* in front of image */
-}
+/* Dropdown */
+.dropdown-menu { display: none; position: absolute; background: #ffc0cb; list-style: none; margin: 0; padding: 10px 0; top: 100%; left: 0; min-width: 180px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.dropdown-menu li { margin: 0; }
+.dropdown-menu a { display: block; padding: 10px 15px; color: white; }
+.dropdown-menu a:hover { background: #ff69b4; }
+.dropdown:hover .dropdown-menu { display: block; }
 
-.cta-button:hover {
-  background: #ff1493; /* deeper pink */
-}
+/* Hero */
+.hero { position: relative; height: 400px; display: flex; justify-content: center; align-items: center; }
+.hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }
+.cta-button { background: #ff69b4; border: none; color: white; padding: 15px 30px; font-size: 18px; cursor: pointer; border-radius: 5px; transition: 0.3s; z-index: 1; }
+.cta-button:hover { background: #ff1493; }
 
-/* Text Section */
-.text-section {
-  text-align: center;
-  padding: 50px 20px;
-}
+/* Sections */
+.section { padding: 60px 20px; text-align: center; }
+.section h2 { color: #ff69b4; margin-bottom: 20px; }
 
-.headline {
-  font-weight: bold;
-  color: #ff69b4;
-}
+/* Gallery */
+.gallery { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.gallery img { width: 200px; height: 150px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; }
+.gallery img:hover { transform: scale(1.05); }
 
-.subheadline {
-  font-style: italic;
-  font-size: 28px;
-  color: #d1477e;
-  margin: 10px 0;
-}
-
-.body-text {
-  font-size: 18px;
-  max-width: 700px;
-  margin: auto;
-  color: #8b3a5b;
-}
-
-/* Parallax Section */
-.parallax {
-  background-image: url('e0abb6de-97f2-452b-8988-0c975a2a4f58.jpg');
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;  
-}
-
-.parallax-text {
-  color: white;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;       /* center text inside the div */
-  text-shadow: 2px 2px #ff69b4;
-  z-index: 1;               /* ensure it's above background */
-  padding: 10px 20px;   
-}
-
-/* Thumbnails Hover Section */
-.thumbnails {
-  display: flex;
-  justify-content: center;
-  padding: 50px 0;
-  background: #ffd1e8;
-}
-
-.thumb-container {
-  display: flex;
-  gap: 30px;
-}
-
-.thumb img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.thumb img:hover {
-  transform: scale(1.1);
-}
-
-/* Carousel */
-.carousel {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-slide img {
-  width: 100%;
-  display: none;
-}
-
-/* Lead Magnet / Subscribe */
-.lead-magnet {
-  text-align: center;
-  padding: 50px 20px;
-  background: #ffc0cb;
-}
-
-.lead-magnet h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #d1477e;
-}
-
-.lead-magnet input[type="email"] {
-  padding: 10px;
-  font-size: 16px;
-  width: 250px;
-  border-radius: 5px;
-  border: none;
-  margin-right: 10px;
-}
-
-.lead-magnet button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #ff69b4;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.lead-magnet button:hover {
-  background: #ff1493;
-}
+/* Form */
+.involved-form { display: flex; flex-direction: column; max-width: 400px; margin: 0 auto; text-align: left; }
+.involved-form label { margin: 10px 0 5px; font-weight: bold; }
+.involved-form input { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+.involved-form button { background: #ff69b4; border: none; padding: 12px; color: white; font-size: 16px; cursor: pointer; border-radius: 5px; }
+.involved-form button:hover { background: #ff1493; }
 
 /* Footer */
-footer {
-  background: #ffb6c1;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
+.footer { background: #ffb6c1; color: white; text-align: center; padding: 20px 0; }
+.footer-menu { list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; margin-bottom: 10px; }
+.footer-menu a { color: white; text-decoration: none; font-weight: bold; }
+.footer-menu a:hover { text-decoration: underline; }
 
-footer .footer-menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
-footer .footer-menu ul li {
-  margin: 0 15px;
-}
-
-footer .footer-menu ul li a {
-  color: white;
-  text-decoration: none;
-}
+/* Carousel */
+.carousel { position: relative; max-width: 800px; margin: 20px auto; overflow: hidden; border-radius: 10px; }
+.carousel img { width: 100%; display: none; }
+.carousel img.active { display: block; }
