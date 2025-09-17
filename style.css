@@ -109,17 +109,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;  
 }
 
 .parallax-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   font-size: 36px;
   font-weight: bold;
+  text-align: center;       /* center text inside the div */
   text-shadow: 2px 2px #ff69b4;
+  z-index: 1;               /* ensure it's above background */
+  padding: 10px 20px;   
 }
 
 /* Thumbnails Hover Section */
