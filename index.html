@@ -6,6 +6,29 @@
   <title>Elderly Smiles - Home</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <style>
+    /* Section backgrounds */
+    .light-pink { background: #ffe4ec; }
+    .lighter-pink { background: #fff0f5; }
+
+    /* Overview section */
+    .overview { padding: 60px 20px; text-align: center; }
+    .overview h1 { color: #ff69b4; margin-bottom: 20px; }
+    .overview p { max-width: 600px; margin: 0 auto; font-size: 18px; }
+
+    /* Stats boxes */
+    .stats { display: flex; justify-content: center; gap: 30px; margin: 40px 0; flex-wrap: wrap; }
+    .stat-box { background: #ffb6c1; color: white; padding: 40px 20px; border-radius: 15px; flex: 1 1 150px; min-width: 150px; text-align: center; }
+    .stat-box h2 { font-size: 36px; margin-bottom: 10px; }
+    .stat-box p { font-size: 18px; margin: 0; }
+
+    /* Hero section adjustment */
+    .hero { height: 300px; }
+    .cta-button { position: relative; top: auto; left: auto; margin-top: 20px; }
+
+    /* Centered text sections */
+    .section h2, .section p { text-align: center; max-width: 700px; margin: 0 auto 20px auto; }
+  </style>
 </head>
 <body>
 
@@ -29,23 +52,42 @@
   </nav>
 </header>
 
-<section class="hero">
-  <img src="placeholder-hero.jpg" alt="Hero Image" class="hero-bg">
-  <button class="cta-button">Join Us</button>
+<!-- Overview Section -->
+<section class="overview light-pink">
+  <h1>Welcome to Elderly Smiles Inc</h1>
+  <p>Elderly Smiles Inc is an official Florida Non-Profit dedicated to enriching the lives of elderly individuals. Through volunteering, community engagement, and creative activities, we bring joy, companionship, and meaningful connections to residents in nursing homes and assisted living facilities.</p>
 </section>
 
-<section class="section">
+<!-- Stats Section -->
+<section class="stats lighter-pink">
+  <div class="stat-box">
+    <h2>47</h2>
+    <p>Volunteers</p>
+  </div>
+  <div class="stat-box">
+    <h2>50</h2>
+    <p>Residents Served</p>
+  </div>
+  <div class="stat-box">
+    <h2>100+</h2>
+    <p>Hours of Service</p>
+  </div>
+</section>
+
+<!-- Experience Joy Section -->
+<section class="section light-pink">
   <h2>Experience the joy of giving back</h2>
   <p>Connecting with elderly individuals brings smiles and companionship.</p>
 </section>
 
-<section class="carousel">
+<!-- Carousel Section -->
+<section class="carousel lighter-pink">
   <img src="placeholder1.jpg" class="active" alt="Slide 1">
   <img src="placeholder2.jpg" alt="Slide 2">
   <img src="placeholder3.jpg" alt="Slide 3">
 </section>
 
-<footer class="footer">
+<footer class="footer light-pink">
   <ul class="footer-menu">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html#mission">Mission</a></li>
