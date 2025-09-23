@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 .hero {
-  background: img("Resized_20250209_104518_1739144468242 (1).JPEG") center/cover no-repeat;
+  background: <img src="Resized_20250209_104518_1739144468242 (1).JPEG" alt="Elderly Smiles Hero">
   text-align: center;
   color: var(--white);
   padding: 100px 20px;
